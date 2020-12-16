@@ -15,25 +15,22 @@ tasks. A task looks like this:
 }
 ```
 
-To get started simply run `npm install`.
+To get started simply run `npm install` to install
+dependencies, and `npm start` to run webpack. 
 
 Dependencies:
    - react
    - momentjs
    - bootstrap (CSS only, no components)
 
-`src/utils/api.js` holds functions that store the data
-in a local array, but these functions are meant to be
-replaced with HTTP calls once we ship data off to the server. The next id is tracked with a JavaScript generator function. Neat!
-
-All components are functional with hooks. Flow is:
+All components are functional with hooks (no class components here). Flow is:
    - `index.js` mounts `<App />` to the DOM
    - `App.js` loads up the `<TaskTable />`
    - `<TaskTable />` holds the state for the tasks list
       and loads the `<TaskForm />` and `<TaskRows />`,
       padding each a reference to a local function that
       refreshes the task list so that the children components can call that function when they update or create tasks
-   - `src/utils/api.js` holds mock functions that represent local state store and are meant to be swapped out for backend API calls eventually.
+   - `src/utils/api.js` holds mock functions that represent local state store and are meant to be swapped out for backend API calls eventually. The next id is tracked with a JavaScript generator function. Neat!
    - `src/utils/icons.js` hold SVG icons from Bootstrap
    - ... that's it!
 
