@@ -1,11 +1,11 @@
-# intro-to-react-task-list
+# Intro to React: Let's build a Task List
 
 This is a standard app built with Create React App. 
 It's a little task manager. You can see a list of all
 tasks, create a new task, complete a task, and delete
 tasks. A task looks like this:
 
-```
+``` json
 {
    "id": 1,
    "description": "Get Groceries",
@@ -15,7 +15,12 @@ tasks. A task looks like this:
 }
 ```
 
-To get started simply run `npm install`
+To get started simply run `npm install`.
+
+Dependencies:
+   - react
+   - momentjs
+   - bootstrap (CSS only, no components)
 
 `src/utils/api.js` holds functions that store the data
 in a local array, but these functions are meant to be
