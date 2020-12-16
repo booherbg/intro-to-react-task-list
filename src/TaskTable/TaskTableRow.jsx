@@ -5,39 +5,17 @@ import TaskTable from './TaskTable';
 
 const TaskTableRow = (props) => {
    const handleClick = (taskId) => {
-      deleteTask(taskId);
-      props.refreshTasks();
+      // TODO
    }
    
    const handleCheckbox = (taskId, doneStatus) => {
-      // console.log(doneStatus);
-      setTaskStatus(taskId, doneStatus);
-      props.refreshTasks();
+      // TODO
    }
 
    const { task } = props;
-   return <>
-      <tr
-         key={`task-${task.id}`}
-         className={(task.done ? 'bg-success text-white' : '')}>
-         <td className="align-middle text-center">
-            <button
-               className={`btn btn-lg shadow-none ${task.done ? 'text-white' : ''}`}
-               onClick={(() => handleCheckbox(task.id, !task.done))}>
-               {task.done ? checkboxCompleteIcon : checkboxEmptyIcon}
-            </button>
-         </td>
-         <td className="align-middle">{task.description}</td>
-         <td className="align-middle">{moment(task.createdAt).fromNow()}</td>
-         <td className="align-middle text-center">
-            <button
-               className={'btn btn-sm btn-danger'}
-               onClick={() => handleClick(task.id)}>
-               {trashIcon}
-            </button>
-         </td>
-      </tr>
-   </>
+
+   // TODO
+   return <> { /* TODO */} </>
 }
 
 export default TaskTableRow;

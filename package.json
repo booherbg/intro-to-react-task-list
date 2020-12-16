@@ -1,6 +1,6 @@
 {
   "proxy": "http://localhost:5000",
-  "name": "sequalize-intro",
+  "name": "intro-to-react",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

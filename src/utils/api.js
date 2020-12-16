@@ -1,3 +1,5 @@
+/* This file works just fine */
+
 import moment from 'moment';
 
 let tasks = []

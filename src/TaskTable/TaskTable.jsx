@@ -4,27 +4,20 @@ import TaskForm from './TaskForm';
 import TaskRow from './TaskTableRow';
 
 const TaskTable = () => {
-   const [tasks, setTasks] = useState([]);
+   // TODO
+   // const [tasks, setTasks] = useState([]);
 
    const refreshTasks = () => {
-      try {
-         const tasks = getTasks();
-         setTasks(tasks);
-      } catch {
-         alert(`Can't get tasks from server`);
-      }
+      // TODO
    }
 
-   // Call refreshTasks on component mount with no dependencies
-   useEffect(refreshTasks, []);
+   // TODO
+   // useEffect(refreshTasks, []);
 
    return <>
       <TaskForm getTasks={refreshTasks} />
       <h2>Current Tasks:</h2>
-      <p>
-         There are <span className="text-success">{tasks.length}</span> total tasks,
-         including <span className="text-danger">{tasks.filter(task => !task.done).length}</span> that are incomplete.
-      </p>
+
       <table className="table table-sm table-striped table-bordered bg-light">
          <thead className="thead-dark">
             <tr>
@@ -35,7 +28,7 @@ const TaskTable = () => {
             </tr>
          </thead>
          <tbody>
-            {tasks.map(task => <TaskRow task={task} refreshTasks={refreshTasks} key={`task-row-${task.id}`} />)}
+            { /* TODO */ }
          </tbody>
       </table>
    </>
