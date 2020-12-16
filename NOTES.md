@@ -1,0 +1,17 @@
+Steps:
+   - Show a fresh project made with Create React App
+      - `npm run start`, `npm install`, `npm run build`
+   - Project Walkthrough: package.json, components, utils folder
+   - React concepts: props, state, JSX, components, hooks, import/export
+   - Building the app:
+      - 1. Take a peek at utils.js
+      - 2. Set up local state in TaskTable
+      - 3. Set up `refreshTasks` function to retrieve tasks from global data source
+      - 4. Set up `useEffect` to refresh tasks upon component mount
+      - 5. Pass in tasks to the table row items
+      - 6. Add bootstrap to table, rows, etc. 
+      - 7. Set up table row to delete tasks
+      - 8. Set up table row to update task status
+      - 9. Set up the form to capture user input
+      - 10. Add new task and refresh the task list
+      - 11. Add bootstrap to the form

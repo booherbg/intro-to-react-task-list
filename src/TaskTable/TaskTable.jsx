@@ -15,7 +15,7 @@ const TaskTable = () => {
    // useEffect(refreshTasks, []);
 
    return <>
-      <TaskForm getTasks={refreshTasks} />
+      <TaskForm refreshTasks={refreshTasks} />
       <h2>Current Tasks:</h2>
 
       <table className="table table-sm table-striped table-bordered bg-light">

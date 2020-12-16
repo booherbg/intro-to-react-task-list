@@ -4,7 +4,7 @@ import moment from 'moment';
 import TaskTable from './TaskTable';
 
 const TaskTableRow = (props) => {
-   const handleClick = (taskId) => {
+   const handleDelete = (taskId) => {
       // TODO
    }
    
