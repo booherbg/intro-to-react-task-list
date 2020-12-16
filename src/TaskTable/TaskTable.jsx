@@ -19,7 +19,7 @@ const TaskTable = () => {
    useEffect(refreshTasks, []);
 
    return <>
-      <TaskForm getTasks={refreshTasks} />
+      <TaskForm refreshTasks={refreshTasks} />
       <h2>Current Tasks:</h2>
       <p>
          There are <span className="text-success">{tasks.length}</span> total tasks,

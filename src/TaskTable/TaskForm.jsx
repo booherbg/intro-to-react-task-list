@@ -9,7 +9,7 @@ const TaskForm = (props) => {
       event.preventDefault();
       try {
          createTask(description);
-         props.getTasks();
+         props.refreshTasks();
          setDescription('');
       } catch {
          alert(`Can't create `)
