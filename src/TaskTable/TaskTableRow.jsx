@@ -1,10 +1,9 @@
 import { deleteTask, setTaskStatus } from '../utils/api';
 import { trashIcon, checkboxCompleteIcon, checkboxEmptyIcon } from '../utils/icons';
 import moment from 'moment';
-import TaskTable from './TaskTable';
 
 const TaskTableRow = (props) => {
-   const handleClick = (taskId) => {
+   const handleDelete = (taskId) => {
       deleteTask(taskId);
       props.refreshTasks();
    }
@@ -32,7 +31,7 @@ const TaskTableRow = (props) => {
          <td className="align-middle text-center">
             <button
                className={'btn btn-sm btn-danger'}
-               onClick={() => handleClick(task.id)}>
+               onClick={() => handleDelete(task.id)}>
                {trashIcon}
             </button>
          </td>
